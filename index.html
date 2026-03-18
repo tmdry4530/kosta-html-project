@@ -27,6 +27,15 @@
   <input class="state-input" type="radio" name="view" id="view-food">
   <input class="state-input" type="radio" name="view" id="view-knowledge">
 
+  <input class="state-input" type="checkbox" id="modal-food-1">
+  <input class="state-input" type="checkbox" id="modal-food-2">
+  <input class="state-input" type="checkbox" id="modal-food-3">
+  <input class="state-input" type="checkbox" id="modal-food-4">
+  <input class="state-input" type="checkbox" id="modal-food-5">
+  <input class="state-input" type="checkbox" id="modal-food-6">
+  <input class="state-input" type="checkbox" id="modal-food-7">
+  <input class="state-input" type="checkbox" id="modal-food-8">
+
   <!-- ========================================================= -->
   <!-- RENDER TREE                                               -->
   <!-- ========================================================= -->
@@ -411,7 +420,7 @@
                 <p>크루아상 반죽을 와플 틀에 구운 바삭한 디저트. 아이스크림과 함께.</p>
                 <div class="product-footer">
                   <span class="product-price">₩8,500</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-1">주문하기</label>
                 </div>
               </div>
             </article>
@@ -422,7 +431,7 @@
                 <p>12시간 우린 돼지뼈 육수에 차슈, 반숙란, 파를 올린 진한 한 그릇.</p>
                 <div class="product-footer">
                   <span class="product-price">₩12,000</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-2">주문하기</label>
                 </div>
               </div>
             </article>
@@ -433,7 +442,7 @@
                 <p>산 마르자노 토마토, 모짜렐라, 바질. 나폴리식 화덕 90초 구이.</p>
                 <div class="product-footer">
                   <span class="product-price">₩18,000</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-3">주문하기</label>
                 </div>
               </div>
             </article>
@@ -444,7 +453,7 @@
                 <p>포르투갈식 커스터드 타르트. 겉은 바삭, 속은 부드러운 황금빛 디저트.</p>
                 <div class="product-footer">
                   <span class="product-price">₩3,500</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-4">주문하기</label>
                 </div>
               </div>
             </article>
@@ -457,7 +466,7 @@
                 <p>쫄깃한 떡과 어묵을 고추장 양념에 볶은 한국 대표 스트릿푸드.</p>
                 <div class="product-footer">
                   <span class="product-price">₩5,000</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-5">주문하기</label>
                 </div>
               </div>
             </article>
@@ -468,7 +477,7 @@
                 <p>45일 숙성 채끝. 숯불 그릴에 미디엄레어로 구운 파인다이닝 코스.</p>
                 <div class="product-footer">
                   <span class="product-price">₩65,000</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-6">주문하기</label>
                 </div>
               </div>
             </article>
@@ -479,7 +488,7 @@
                 <p>우지산 말차를 우유에 풀어낸 부드러운 그린티 음료. 핫/아이스 선택.</p>
                 <div class="product-footer">
                   <span class="product-price">₩6,500</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-7">주문하기</label>
                 </div>
               </div>
             </article>
@@ -490,7 +499,7 @@
                 <p>보르도 전통 디저트. 럼과 바닐라 향의 쫀득한 속, 캐러멜라이즈 겉껍질.</p>
                 <div class="product-footer">
                   <span class="product-price">₩4,500</span>
-                  <a class="product-link" href="#" target="_blank">Order</a>
+                  <label class="product-link" for="modal-food-8">주문하기</label>
                 </div>
               </div>
             </article>
@@ -651,6 +660,66 @@
           </div>
         </div>
       </section>
+
+    <!-- FOOD ORDER MODALS -->
+    <div class="modal-overlay">
+      <div class="modal-panel modal-panel--1">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">크로플</h2>
+        <p class="modal-desc">크루아상 반죽을 와플 틀에 구운 바삭한 디저트. 아이스크림과 함께.</p>
+        <p class="modal-price">₩8,500</p>
+        <label class="modal-close" for="modal-food-1">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--2">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">돈코츠 라멘</h2>
+        <p class="modal-desc">12시간 우린 돼지뼈 육수에 차슈, 반숙란, 파를 올린 진한 한 그릇.</p>
+        <p class="modal-price">₩12,000</p>
+        <label class="modal-close" for="modal-food-2">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--3">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">마르게리타 피자</h2>
+        <p class="modal-desc">산 마르자노 토마토, 모짜렐라, 바질. 나폴리식 화덕 90초 구이.</p>
+        <p class="modal-price">₩18,000</p>
+        <label class="modal-close" for="modal-food-3">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--4">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">에그타르트</h2>
+        <p class="modal-desc">포르투갈식 커스터드 타르트. 겉은 바삭, 속은 부드러운 황금빛 디저트.</p>
+        <p class="modal-price">₩3,500</p>
+        <label class="modal-close" for="modal-food-4">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--5">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">매운 떡볶이</h2>
+        <p class="modal-desc">쫄깃한 떡과 어묵을 고추장 양념에 볶은 한국 대표 스트릿푸드.</p>
+        <p class="modal-price">₩5,000</p>
+        <label class="modal-close" for="modal-food-5">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--6">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">드라이에이징 스테이크</h2>
+        <p class="modal-desc">45일 숙성 채끝. 숯불 그릴에 미디엄레어로 구운 파인다이닝 코스.</p>
+        <p class="modal-price">₩65,000</p>
+        <label class="modal-close" for="modal-food-6">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--7">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">말차 라떼</h2>
+        <p class="modal-desc">우지산 말차를 우유에 풀어낸 부드러운 그린티 음료. 핫/아이스 선택.</p>
+        <p class="modal-price">₩6,500</p>
+        <label class="modal-close" for="modal-food-7">닫기</label>
+      </div>
+      <div class="modal-panel modal-panel--8">
+        <p class="modal-eyebrow">주문 확인</p>
+        <h2 class="modal-title">카눌레</h2>
+        <p class="modal-desc">보르도 전통 디저트. 럼과 바닐라 향의 쫀득한 속, 캐러멜라이즈 겉껍질.</p>
+        <p class="modal-price">₩4,500</p>
+        <label class="modal-close" for="modal-food-8">닫기</label>
+      </div>
+    </div>
     </main>
   </div>
 </body>

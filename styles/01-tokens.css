@@ -57,6 +57,11 @@
     --nft-cyan: hsl(185 90% 58%);
     --nft-glow: hsl(270 90% 62% / 0.3);
 
+    --food-orange: hsl(28 90% 55%);
+    --food-orange-soft: hsl(28 90% 55% / 0.15);
+    --food-warm: hsl(45 80% 60%);
+    --food-glow: hsl(28 90% 55% / 0.3);
+
     --know-blue: hsl(212 100% 64%);
     --know-blue-soft: hsl(212 100% 64% / 0.15);
     --know-teal: hsl(180 70% 55%);

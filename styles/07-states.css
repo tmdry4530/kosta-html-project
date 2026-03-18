@@ -4,6 +4,7 @@
   /* ========================================================= */
   #view-f1:checked ~ .app-shell .view--f1,
   #view-nft:checked ~ .app-shell .view--nft,
+  #view-food:checked ~ .app-shell .view--food,
   #view-knowledge:checked ~ .app-shell .view--knowledge {
     opacity: 1;
     pointer-events: auto;
@@ -26,6 +27,12 @@
     --accent-glow: var(--nft-glow);
   }
 
+  #view-food:checked ~ .app-shell {
+    --accent: var(--food-orange);
+    --accent-soft: var(--food-orange-soft);
+    --accent-glow: var(--food-glow);
+  }
+
   #view-knowledge:checked ~ .app-shell {
     --accent: var(--know-blue);
     --accent-soft: var(--know-blue-soft);
@@ -37,6 +44,7 @@
   /* ========================================================= */
   #view-f1:checked ~ .app-shell label[for="view-f1"],
   #view-nft:checked ~ .app-shell label[for="view-nft"],
+  #view-food:checked ~ .app-shell label[for="view-food"],
   #view-knowledge:checked ~ .app-shell label[for="view-knowledge"] {
     color: var(--text-primary);
     background: hsl(0 0% 100% / 0.1);

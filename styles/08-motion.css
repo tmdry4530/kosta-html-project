@@ -74,42 +74,49 @@
 
   #view-f1:checked ~ .app-shell .view--f1 .bento-card,
   #view-nft:checked ~ .app-shell .view--nft .bento-card,
+  #view-food:checked ~ .app-shell .view--food .bento-card,
   #view-knowledge:checked ~ .app-shell .view--knowledge .bento-card {
     animation: card-enter var(--dur-slow) var(--ease-out) both;
   }
 
   #view-f1:checked ~ .app-shell .view--f1 .card--hero,
   #view-nft:checked ~ .app-shell .view--nft .card--hero,
+  #view-food:checked ~ .app-shell .view--food .card--hero,
   #view-knowledge:checked ~ .app-shell .view--knowledge .card--hero {
     animation-delay: 0ms;
   }
 
   #view-f1:checked ~ .app-shell .view--f1 .card--b,
   #view-nft:checked ~ .app-shell .view--nft .card--b,
+  #view-food:checked ~ .app-shell .view--food .card--b,
   #view-knowledge:checked ~ .app-shell .view--knowledge .card--b {
     animation-delay: 60ms;
   }
 
   #view-f1:checked ~ .app-shell .view--f1 .card--c,
   #view-nft:checked ~ .app-shell .view--nft .card--c,
+  #view-food:checked ~ .app-shell .view--food .card--c,
   #view-knowledge:checked ~ .app-shell .view--knowledge .card--c {
     animation-delay: 120ms;
   }
 
   #view-f1:checked ~ .app-shell .view--f1 .card--d,
   #view-nft:checked ~ .app-shell .view--nft .card--d,
+  #view-food:checked ~ .app-shell .view--food .card--d,
   #view-knowledge:checked ~ .app-shell .view--knowledge .card--d {
     animation-delay: 180ms;
   }
 
   #view-f1:checked ~ .app-shell .view--f1 .card--e,
   #view-nft:checked ~ .app-shell .view--nft .card--e,
+  #view-food:checked ~ .app-shell .view--food .card--e,
   #view-knowledge:checked ~ .app-shell .view--knowledge .card--e {
     animation-delay: 240ms;
   }
 
   #view-f1:checked ~ .app-shell .view--f1 .card--f,
   #view-nft:checked ~ .app-shell .view--nft .card--f,
+  #view-food:checked ~ .app-shell .view--food .card--f,
   #view-knowledge:checked ~ .app-shell .view--knowledge .card--f {
     animation-delay: 300ms;
   }

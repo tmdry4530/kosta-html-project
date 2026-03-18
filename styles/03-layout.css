@@ -53,6 +53,7 @@
 
   .nav-dot--f1 { background: var(--f1-red); }
   .nav-dot--nft { background: var(--nft-violet); }
+  .nav-dot--food { background: var(--food-orange); }
   .nav-dot--knowledge { background: var(--know-blue); }
 
   .view-sections {

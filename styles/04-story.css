@@ -128,6 +128,12 @@
       radial-gradient(ellipse 40% 40% at 20% 80%, hsl(185 90% 58% / 0.1), transparent);
   }
 
+  .hero-visual--food {
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 60%, var(--food-orange-soft), transparent),
+      radial-gradient(ellipse 40% 40% at 20% 80%, hsl(45 80% 60% / 0.08), transparent);
+  }
+
   .hero-visual--knowledge {
     background:
       radial-gradient(ellipse 60% 50% at 80% 60%, var(--know-blue-soft), transparent),

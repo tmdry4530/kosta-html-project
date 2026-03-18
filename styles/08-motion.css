@@ -1,5 +1,64 @@
 @layer motion {
   /* ========================================================= */
+  /* LOADING SCREEN                                            */
+  /* ========================================================= */
+  @keyframes loading-bar-fill {
+    0%   { inline-size: 0; }
+    100% { inline-size: 100%; }
+  }
+
+  @keyframes loading-fade-out {
+    0%   { opacity: 1; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+  }
+
+  .loading-screen {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--black-950);
+    animation: loading-fade-out 0.6s var(--ease-out) 2.4s forwards;
+    pointer-events: auto;
+  }
+
+  .loading-screen::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    animation: loading-fade-out 0.6s var(--ease-out) 2.4s forwards;
+  }
+
+  .loading-logo {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    color: var(--white-90);
+  }
+
+  .loading-bar {
+    inline-size: clamp(10rem, 20vw, 16rem);
+    block-size: 3px;
+    background: var(--white-06);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .loading-bar-fill {
+    block-size: 100%;
+    background: var(--accent);
+    border-radius: 2px;
+    animation: loading-bar-fill 2s var(--ease-out) forwards;
+    box-shadow: 0 0 12px var(--accent-glow);
+  }
+
+  /* ========================================================= */
   /* CARD ENTRANCE — staggered fade-in                         */
   /* ========================================================= */
   @keyframes card-enter {

@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Velocity Vault</title>
+
+  <link rel="stylesheet" href="styles/00-reset.css">
+  <link rel="stylesheet" href="styles/01-tokens.css">
+  <link rel="stylesheet" href="styles/02-base.css">
+  <link rel="stylesheet" href="styles/03-layout.css">
+  <link rel="stylesheet" href="styles/04-story.css">
+  <link rel="stylesheet" href="styles/05-knowledge.css">
+  <link rel="stylesheet" href="styles/06-market.css">
+  <link rel="stylesheet" href="styles/07-states.css">
+  <link rel="stylesheet" href="styles/08-motion.css">
+  <link rel="stylesheet" href="styles/09-utilities.css">
+</head>
+
+<body class="vault-body">
+  <!-- ========================================================= -->
+  <!-- GLOBAL STATE REGISTRY                                     -->
+  <!-- ========================================================= -->
+  <input class="state-input" type="radio" name="view" id="view-f1" checked>
+  <input class="state-input" type="radio" name="view" id="view-nft">
+  <input class="state-input" type="radio" name="view" id="view-knowledge">
+
+  <!-- ========================================================= -->
+  <!-- RENDER TREE                                               -->
+  <!-- ========================================================= -->
+  <div class="app-shell">
+    <header class="global-header">
+      <a class="brandmark" href="#top">The Velocity Vault</a>
+      <nav class="global-nav" aria-label="Primary">
+        <label class="nav-chip" for="view-f1">
+          <span class="nav-dot nav-dot--f1"></span>F1
+        </label>
+        <label class="nav-chip" for="view-nft">
+          <span class="nav-dot nav-dot--nft"></span>NFT
+        </label>
+        <label class="nav-chip" for="view-knowledge">
+          <span class="nav-dot nav-dot--knowledge"></span>Knowledge
+        </label>
+      </nav>
+    </header>
+
+    <main class="view-sections">
+      <!-- ==================== F1 GOODS ==================== -->
+      <section class="view view--f1" id="f1">
+        <div class="bento-dashboard">
+          <article class="bento-card card--hero">
+            <p class="card-eyebrow">F1 Collection</p>
+            <h1 class="card-headline">Race-grade<br>merch.</h1>
+            <p class="card-desc">Scale models, team wear, and pit-lane memorabilia from the world's fastest motorsport.
+            </p>
+            <div class="hero-visual hero-visual--f1"></div>
+          </article>
+
+          <article class="bento-card card--b">
+            <p class="card-eyebrow">Scale Models</p>
+            <p class="card-stat">1:18</p>
+            <p class="card-desc">Die-cast precision replicas with opening panels and carbon details.</p>
+          </article>
+
+          <article class="bento-card card--c">
+            <p class="card-eyebrow">Team Wear</p>
+            <p class="card-stat">24<span class="card-unit">items</span></p>
+            <p class="card-desc">Official race suits, caps, and jackets from the 2024 season.</p>
+          </article>
+
+          <article class="bento-card card--d">
+            <p class="card-eyebrow">Limited Run</p>
+            <p class="card-stat">500<span class="card-unit">pcs</span></p>
+          </article>
+
+          <article class="bento-card card--e">
+            <p class="card-eyebrow">Starting at</p>
+            <p class="card-stat">&dollar;29</p>
+          </article>
+
+          <article class="bento-card card--f">
+            <p class="card-eyebrow">Authenticity</p>
+            <h2 class="card-title">Every item comes with a holographic certificate of origin.</h2>
+            <p class="card-desc">Verified by the team, serial-numbered, and shipped worldwide.</p>
+          </article>
+        </div>
+
+        <div class="product-showcase">
+          <h2 class="showcase-heading">Products</h2>
+          <div class="product-row">
+            <article class="product-item" style="--thumb-hue: 3">
+              <div class="product-thumb"><img src="images/f1/f1_1.jpg" alt="RB20 Scale Model"></div>
+              <div class="product-detail">
+                <h3>Red Bull Racing Lego - Technic</h3>
+                <p>1:18 die-cast with opening panels, rubber tires, and carbon-look floor.</p>
+                <div class="product-footer">
+                  <span class="product-price">$280</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/red-bull-racing/red-bull-racing-lego-technic/t-10642061+p-798835028660821+z-9-2005219213"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 15">
+              <div class="product-thumb"><img src="images/f1/f1_2.jpg" alt="Team Cap"></div>
+              <div class="product-detail">
+                <h3>Ferrari Puma Rain Jacket</h3>
+                <p>Flat-brim snapback with embroidered Oracle Red Bull Racing logo.</p>
+                <div class="product-footer">
+                  <span class="product-price">$180</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/formula-1-merchandise/formula-1-retro-teddy-bear/t-65544432+p-35776825515526+z-8-3539555991"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 30">
+              <div class="product-thumb"><img src="images/f1/f1_3.jpg" alt="Race Suit Replica"></div>
+              <div class="product-detail">
+                <h3>Scuderia Ferrari Puma Rain Jacket</h3>
+                <p>Nomex-look polyester with official sponsor patches and team colors.</p>
+                <div class="product-footer">
+                  <span class="product-price">$180</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/scuderia-ferrari/scuderia-ferrari-scuderia-ferrari-puma-rain-jacket-red/t-54420847+p-80991470812429+z-8-981608566"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 350">
+              <div class="product-thumb"><img src="images/f1/f1_4.jpg" alt="Brake Disc Keyring"></div>
+              <div class="product-detail">
+                <h3>McLaren F1 Team Mitchell & Ness Varsity Jacket</h3>
+                <p>Miniature carbon-ceramic disc with caliper detail. Stainless clip.</p>
+                <div class="product-footer">
+                  <span class="product-price">$752</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/mclaren-f1-team/mclaren-f1-team-mitchell-and-ness-varsity-jacket/t-43086428+p-352214909505412+z-9-3303103151"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="product-row">
+            <article class="product-item" style="--thumb-hue: 340">
+              <div class="product-thumb"><img src="images/f1/f1_5.jpg" alt="Pit Crew Jacket"></div>
+              <div class="product-detail">
+                <h3>Revolut Audi F1 Team We Start Because We Dare Poster</h3>
+                <p>Water-resistant softshell with reflective piping and team emblem.</p>
+                <div class="product-footer">
+                  <span class="product-price">$87</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/audi/revolut-audi-f1-team-we-start-because-we-dare-poster/t-3893937889+p-68995842867463+z-9-211511122"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 8">
+              <div class="product-thumb"><img src="images/f1/f1_6.jpg" alt="Steering Wheel Replica"></div>
+              <div class="product-detail">
+                <h3>Charles Leclerc Special Edition Shanghai GP Cap</h3>
+                <p>Half-scale with 25 functional buttons and rotary dials.</p>
+                <div class="product-footer">
+                  <span class="product-price">$60</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/scuderia-ferrari/scuderia-ferrari-2026-charles-leclerc-special-edition-shanghai-gp-cap-red/t-10427514+p-799925696952110+z-9-3861051905"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 20">
+              <div class="product-thumb"><img src="images/f1/f1_7.jpg" alt="Tire Wall Clock"></div>
+              <div class="product-detail">
+                <h3>Red Bull Racing Max Verstappen 2024 F1® World Drivers Champion Poster</h3>
+                <p>Recycled Pirelli compound ring. Silent quartz movement.</p>
+                <div class="product-footer">
+                  <span class="product-price">$132</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/red-bull-racing/red-bull-racing-max-verstappen-2024-f1%C2%AE-world-drivers-champion-poster/t-65081927+p-46555794769827+z-8-2383924765"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 0">
+              <div class="product-thumb"><img src="images/f1/f1_8.jpg" alt="Aero Art Print"></div>
+              <div class="product-detail">
+                <h3>McLaren MCL38 No.4 Lando Norris Miami 2024 Winners 1:12 Model</h3>
+                <p>CFD visualization of front-wing pressure map. Signed, numbered.</p>
+                <div class="product-footer">
+                  <span class="product-price">$671</span>
+                  <a class="product-link"
+                    href="https://f1store.formula1.com/en/mclaren-f1-team/mclaren-mcl38-no4-lando-norris-miami-2024-winners-1:12-model/t-10972084+p-915524307716485+z-9-290609070"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== NFT SHOWCASE ==================== -->
+      <section class="view view--nft" id="nft">
+        <div class="bento-dashboard">
+          <article class="bento-card card--hero">
+            <p class="card-eyebrow">Generative Collection</p>
+            <h1 class="card-headline">Weird<br>machines.</h1>
+            <p class="card-desc">10,000 procedurally generated mechanical creatures. Each one is glitched, noisy, and
+              unrepeatable.</p>
+            <div class="hero-visual hero-visual--nft"></div>
+          </article>
+
+          <article class="bento-card card--b">
+            <p class="card-eyebrow">Total Pieces</p>
+            <p class="card-stat">10K</p>
+            <p class="card-desc">Unique generative outputs, no two alike.</p>
+          </article>
+
+          <article class="bento-card card--c">
+            <p class="card-eyebrow">Traits</p>
+            <p class="card-stat">247</p>
+            <p class="card-desc">Body, limb, eye, texture, glitch — layered into infinite combos.</p>
+          </article>
+
+          <article class="bento-card card--d">
+            <p class="card-eyebrow">Blockchain</p>
+            <h2 class="card-title">Ethereum</h2>
+          </article>
+
+          <article class="bento-card card--e">
+            <p class="card-eyebrow">Format</p>
+            <h2 class="card-title">ERC-721</h2>
+          </article>
+
+          <article class="bento-card card--f">
+            <p class="card-eyebrow">About the Art</p>
+            <h2 class="card-title">Noise fields, mechanical joints, and digital patina.</h2>
+            <p class="card-desc">Built in p5.js, stored on IPFS, rendered in your wallet forever.</p>
+          </article>
+        </div>
+
+        <div class="product-showcase">
+          <h2 class="showcase-heading">Collection</h2>
+          <div class="product-row">
+            <article class="product-item" style="--thumb-hue: 270">
+              <div class="product-thumb"><img src="images/nft/nft_1.png" alt="Glitch Mech"></div>
+              <div class="product-detail">
+                <h3>CloneX #13134</h3>
+                <p>First mint. Chrome body, fractured limbs, static-field eyes.</p>
+                <div class="product-footer">
+                  <span class="product-price">$850,354</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0x49cf6f5d44e70224e2e23fdcdd2c053f30ada28b/4445"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 290">
+              <div class="product-thumb"><img src="images/nft/nft_2.png" alt="Rust Walker"></div>
+              <div class="product-detail">
+                <h3>Rust Walker #0412</h3>
+                <p>Oxidized copper shell. Walks in generative loops. Never stops.</p>
+                <div class="product-footer">
+                  <span class="product-price">$462,149</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0xbd3531da5cf5857e7cfaa92426877b022e612cf8/6873"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 185">
+              <div class="product-thumb"><img src="images/nft/nft_3.png" alt="Neon Crawler"></div>
+              <div class="product-detail">
+                <h3>Lil Pudgy #1721</h3>
+                <p>Bioluminescent tubes. Leaves trails in the metadata.</p>
+                <div class="product-footer">
+                  <span class="product-price">$39,282</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0x524cab2ec69124574082676e6f654a18df49a048/1721"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 255">
+              <div class="product-thumb"><img src="images/nft/nft_4.png" alt="Static Beast"></div>
+              <div class="product-detail">
+                <h3>Azuki #9605</h3>
+                <p>TV-snow skin, antenna horns, broadcast-signal roar.</p>
+                <div class="product-footer">
+                  <span class="product-price">$972,130</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0xed5af388653567af2f388e6224dc7c4b3241c544/9605"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="product-row">
+            <article class="product-item" style="--thumb-hue: 310">
+              <div class="product-thumb"><img src="images/nft/nft_5.png" alt="Wire Frame"></div>
+              <div class="product-detail">
+                <h3>BAYC #3749</h3>
+                <p>Skeleton mesh only. No fill, no shade, pure topology.</p>
+                <div class="product-footer">
+                  <span class="product-price">$1,709,952</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/3749"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 200">
+              <div class="product-thumb"><img src="images/nft/nft_6.png" alt="Pixel Golem"></div>
+              <div class="product-detail">
+                <h3>CryptoPunk #9998</h3>
+                <p>8-bit resolution body on a high-res blockchain. Ironic.</p>
+                <div class="product-footer">
+                  <span class="product-price">$287,687,877</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0xb47e3cd837ddf8e4c57f05d70ab865de6e193bbb/9998"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 265">
+              <div class="product-thumb"><img src="images/nft/nft_7.png" alt="Void Dancer"></div>
+              <div class="product-detail">
+                <h3>Hypurr #28</h3>
+                <p>This is the official NFT of HyperLiquid, the world’s largest on-chain DEX.</p>
+                <div class="product-footer">
+                  <span class="product-price">$242,309</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/hyperevm/0x9125e2d6827a00b0f8330d6ef7bef07730bac685/28"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 240">
+              <div class="product-thumb"><img src="images/nft/nft_8.png" alt="Signal Ghost"></div>
+              <div class="product-detail">
+                <h3>Ringers #109</h3>
+                <p>RF interference pattern rendered as a walking creature.</p>
+                <div class="product-footer">
+                  <span class="product-price">$4,852,566</span>
+                  <a class="product-link"
+                    href="https://opensea.io/item/ethereum/0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270/13000109"
+                    target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================== DEV TERMS ================== -->
+      <section class="view view--knowledge" id="knowledge">
+        <div class="bento-dashboard">
+          <article class="bento-card card--hero">
+            <p class="card-eyebrow">Developer Glossary</p>
+            <h1 class="card-headline">Code,<br>decoded.</h1>
+            <p class="card-desc">Essential programming terms explained without the jargon. Built for humans, not
+              compilers.</p>
+            <div class="hero-visual hero-visual--knowledge"></div>
+          </article>
+
+          <article class="bento-card card--b">
+            <p class="card-eyebrow">API</p>
+            <h2 class="card-title">Application Programming Interface</h2>
+            <p class="card-desc">A contract between two systems. You send a request, it sends a response.</p>
+          </article>
+
+          <article class="bento-card card--c">
+            <p class="card-eyebrow">Git</p>
+            <h2 class="card-title">Version Control</h2>
+            <p class="card-desc">A time machine for code. Branch, commit, revert, merge — never lose work again.</p>
+          </article>
+
+          <article class="bento-card card--d">
+            <p class="card-eyebrow">Framework</p>
+            <h2 class="card-title">Opinionated Scaffolding</h2>
+          </article>
+
+          <article class="bento-card card--e">
+            <p class="card-eyebrow">CI/CD</p>
+            <h2 class="card-title">Ship Fast, Break Less</h2>
+          </article>
+
+          <article class="bento-card card--f">
+            <p class="card-eyebrow">CSS</p>
+            <h2 class="card-title">This entire page is built with zero JavaScript.</h2>
+            <p class="card-desc">State machines, scroll-driven layouts, and bento grids — all native CSS.</p>
+          </article>
+        </div>
+
+        <div class="product-showcase">
+          <h2 class="showcase-heading">Terms</h2>
+          <div class="product-row">
+            <article class="product-item" style="--thumb-hue: 212">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+                  alt="TypeScript"></div>
+              <div class="product-detail">
+                <h3>TypeScript</h3>
+                <p>JavaScript with a seatbelt. Catch type errors at compile time, not in production.</p>
+                <div class="product-footer">
+                  <span class="product-price">Language</span>
+                  <a class="product-link" href="https://www.typescriptlang.org" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 180">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                  alt="Git Branching"></div>
+              <div class="product-detail">
+                <h3>React</h3>
+                <p>JavaScript library for building user interfaces.</p>
+                <div class="product-footer">
+                  <span class="product-price">Library</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 200">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#">
+              </div>
+              <div class="product-detail">
+                <h3>C#</h3>
+                <p>Object-oriented programming language from Microsoft. Used for web development, game development, and
+                  enterprise applications.</p>
+                <div class="product-footer">
+                  <span class="product-price">Language</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 220">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg"
+                  alt="Docker Containers">
+              </div>
+              <div class="product-detail">
+                <h3>Docker Containers</h3>
+                <p>Package your app with its entire environment. Works on my machine — everywhere.</p>
+                <div class="product-footer">
+                  <span class="product-price">Tool</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="product-row">
+            <article class="product-item" style="--thumb-hue: 195">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" alt="Rust">
+              </div>
+              <div class="product-detail">
+                <h3>Rust</h3>
+                <p>Memory safety without garbage collection. Blazing fast and reliable.</p>
+                <div class="product-footer">
+                  <span class="product-price">Language</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 170">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                  alt="AWS"></div>
+              <div class="product-detail">
+                <h3>AWS</h3>
+                <p>Cloud infrastructure as code. Rent servers, databases, and services on demand.</p>
+                <div class="product-footer">
+                  <span class="product-price">Cloud</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 240">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+                  alt="PostgreSQL"></div>
+              <div class="product-detail">
+                <h3>PostgreSQL</h3>
+                <p>Relational database with ACID transactions and rich feature set.</p>
+                <div class="product-footer">
+                  <span class="product-price">Database</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+            <article class="product-item" style="--thumb-hue: 160">
+              <div class="product-thumb"><img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/solidity/solidity-original.svg"
+                  alt="Solidity"></div>
+              <div class="product-detail">
+                <h3>Solidity</h3>
+                <p>Smart contracts for the EVM. Write deterministic logic that runs on a decentralized network.</p>
+                <div class="product-footer">
+                  <span class="product-price">Language</span>
+                  <a class="product-link" href="#" target="_blank">Link</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

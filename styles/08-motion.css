@@ -1,0 +1,67 @@
+@layer motion {
+  /* ========================================================= */
+  /* CARD ENTRANCE — staggered fade-in                         */
+  /* ========================================================= */
+  @keyframes card-enter {
+    from {
+      opacity: 0;
+      transform: translateY(1.5rem);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .bento-card,
+  #view-nft:checked ~ .app-shell .view--nft .bento-card,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .bento-card {
+    animation: card-enter var(--dur-slow) var(--ease-out) both;
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .card--hero,
+  #view-nft:checked ~ .app-shell .view--nft .card--hero,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .card--hero {
+    animation-delay: 0ms;
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .card--b,
+  #view-nft:checked ~ .app-shell .view--nft .card--b,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .card--b {
+    animation-delay: 60ms;
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .card--c,
+  #view-nft:checked ~ .app-shell .view--nft .card--c,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .card--c {
+    animation-delay: 120ms;
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .card--d,
+  #view-nft:checked ~ .app-shell .view--nft .card--d,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .card--d {
+    animation-delay: 180ms;
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .card--e,
+  #view-nft:checked ~ .app-shell .view--nft .card--e,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .card--e {
+    animation-delay: 240ms;
+  }
+
+  #view-f1:checked ~ .app-shell .view--f1 .card--f,
+  #view-nft:checked ~ .app-shell .view--nft .card--f,
+  #view-knowledge:checked ~ .app-shell .view--knowledge .card--f {
+    animation-delay: 300ms;
+  }
+
+  /* ========================================================= */
+  /* REDUCED MOTION                                            */
+  /* ========================================================= */
+  @media (prefers-reduced-motion: reduce) {
+    .bento-card {
+      animation: none !important;
+      transition-duration: 0ms !important;
+    }
+  }
+}

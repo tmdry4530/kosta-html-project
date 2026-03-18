@@ -1,0 +1,44 @@
+@layer states {
+  /* ========================================================= */
+  /* VIEW SWITCHING                                            */
+  /* ========================================================= */
+  #view-f1:checked ~ .app-shell .view--f1,
+  #view-nft:checked ~ .app-shell .view--nft,
+  #view-knowledge:checked ~ .app-shell .view--knowledge {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+
+  /* ========================================================= */
+  /* PER-VIEW THEME (auto color based on active view)          */
+  /* ========================================================= */
+  #view-f1:checked ~ .app-shell {
+    --accent: var(--f1-red);
+    --accent-soft: var(--f1-red-soft);
+    --accent-glow: var(--f1-glow);
+  }
+
+  #view-nft:checked ~ .app-shell {
+    --accent: var(--nft-violet);
+    --accent-soft: var(--nft-violet-soft);
+    --accent-glow: var(--nft-glow);
+  }
+
+  #view-knowledge:checked ~ .app-shell {
+    --accent: var(--know-blue);
+    --accent-soft: var(--know-blue-soft);
+    --accent-glow: var(--know-glow);
+  }
+
+  /* ========================================================= */
+  /* NAV CHIP ACTIVE STATE                                     */
+  /* ========================================================= */
+  #view-f1:checked ~ .app-shell label[for="view-f1"],
+  #view-nft:checked ~ .app-shell label[for="view-nft"],
+  #view-knowledge:checked ~ .app-shell label[for="view-knowledge"] {
+    color: var(--text-primary);
+    background: hsl(0 0% 100% / 0.1);
+  }
+}

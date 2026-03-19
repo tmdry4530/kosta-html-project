@@ -89,21 +89,3 @@ flex transition ──→ 호버 카드 확장 + 상세설명 표시
 | NFT | 바이올렛 | `hsl(270 90% 62%)` |
 | Food | 오렌지 | `hsl(28 90% 55%)` |
 | Knowledge | 블루 | `hsl(212 100% 64%)` |
-
-## 브라우저 지원
-
-- Chrome 105+ (`:has()` 지원)
-- Safari 15.4+
-- Firefox 121+
-- Edge 105+
-
-## 로컬 실행
-
-```bash
-# 클론
-git clone https://github.com/tmdry4530/kosta-html-project.git
-cd kosta-html-project
-
-# 브라우저에서 열기 (빌드 불필요)
-open index.html
-```

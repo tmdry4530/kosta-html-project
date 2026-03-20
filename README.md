@@ -80,12 +80,3 @@ checkbox :checked ──→ ~ .app-shell .modal-overlay ──→ 모달 표시
 :has(.product-item:hover) ──→ 같은 행 비호버 카드 dimming
 flex transition ──→ 호버 카드 확장 + 상세설명 표시
 ```
-
-## 색상 테마
-
-| 섹션 | 컬러 | HSL |
-|------|-------|-----|
-| F1 | 레드 | `hsl(3 88% 56%)` |
-| NFT | 바이올렛 | `hsl(270 90% 62%)` |
-| Food | 오렌지 | `hsl(28 90% 55%)` |
-| Knowledge | 블루 | `hsl(212 100% 64%)` |

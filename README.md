@@ -6,7 +6,7 @@
 
 ## 소개
 
-The Vault는 4개의 독립적인 섹션(F1, NFT, Food, Knowledge)을 하나의 Apple 스타일 벤토 그리드 인터페이스에 담은 웹사이트입니다. **JavaScript를 단 한 줄도 사용하지 않으며**, CSS의 상태 관리(radio/checkbox `:checked`), 선택자(`:has()`, `~`), 트랜지션만으로 모든 인터랙션을 구현합니다.
+The Vault는 4개의 독립적인 섹션(F1, NFT, Knowledge, Food)을 하나의 Apple 스타일 벤토 그리드 인터페이스에 담은 웹사이트입니다. **JavaScript를 단 한 줄도 사용하지 않으며**, CSS의 상태 관리(radio/checkbox `:checked`), 선택자(`:has()`, `~`), 트랜지션만으로 모든 인터랙션을 구현합니다.
 
 ## 스크린샷
 
@@ -19,14 +19,14 @@ The Vault는 4개의 독립적인 섹션(F1, NFT, Food, Knowledge)을 하나의 
 ![NFT 벤토 대시보드](screenshots/04-nft-bento.png)
 ![NFT 컬렉션 쇼케이스](screenshots/05-nft-showcase.png)
 
+### Knowledge - 개발자 도구 사전
+![Knowledge 벤토 대시보드](screenshots/09-knowledge-bento.png)
+![Knowledge 기술 쇼케이스](screenshots/10-knowledge-showcase.png)
+
 ### Food - 푸드 큐레이션
 ![Food 벤토 대시보드](screenshots/06-food-bento.png)
 ![Food 메뉴 쇼케이스](screenshots/07-food-showcase.png)
 ![Food 주문 모달](screenshots/08-food-modal.png)
-
-### Knowledge - 개발자 도구 사전
-![Knowledge 벤토 대시보드](screenshots/09-knowledge-bento.png)
-![Knowledge 기술 쇼케이스](screenshots/10-knowledge-showcase.png)
 
 ### 반응형
 ![모바일 뷰](screenshots/11-mobile.png)
@@ -80,3 +80,12 @@ checkbox :checked ──→ ~ .app-shell .modal-overlay ──→ 모달 표시
 :has(.product-item:hover) ──→ 같은 행 비호버 카드 dimming
 flex transition ──→ 호버 카드 확장 + 상세설명 표시
 ```
+
+## 색상 테마
+
+| 섹션 | 컬러 | HSL |
+|------|-------|-----|
+| F1 | 레드 | `hsl(3 88% 56%)` |
+| NFT | 바이올렛 | `hsl(270 90% 62%)` |
+| Knowledge | 블루 | `hsl(212 100% 64%)` |
+| Food | 오렌지 | `hsl(28 90% 55%)` |

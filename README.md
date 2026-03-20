@@ -8,6 +8,11 @@
 
 The Vault는 4개의 독립적인 섹션(F1, NFT, Knowledge, Food)을 하나의 Apple 스타일 벤토 그리드 인터페이스에 담은 웹사이트입니다. **JavaScript를 단 한 줄도 사용하지 않으며**, CSS의 상태 관리(radio/checkbox `:checked`), 선택자(`:has()`, `~`), 트랜지션만으로 모든 인터랙션을 구현합니다.
 
+## 기획 의도
+
+- 상품 소개, 홍보, 지식 공유를 하나의 플랫폼에서 할 수 있는 쇼케이스를 만들고 싶었습니다.
+- JavaScript 없이 순수 CSS만으로 어디까지 가능한지 실험해보고 싶었습니다.
+
 ## 스크린샷
 
 ### F1 - 공식 굿즈 컬렉션
@@ -80,12 +85,3 @@ checkbox :checked ──→ ~ .app-shell .modal-overlay ──→ 모달 표시
 :has(.product-item:hover) ──→ 같은 행 비호버 카드 dimming
 flex transition ──→ 호버 카드 확장 + 상세설명 표시
 ```
-
-## 색상 테마
-
-| 섹션 | 컬러 | HSL |
-|------|-------|-----|
-| F1 | 레드 | `hsl(3 88% 56%)` |
-| NFT | 바이올렛 | `hsl(270 90% 62%)` |
-| Knowledge | 블루 | `hsl(212 100% 64%)` |
-| Food | 오렌지 | `hsl(28 90% 55%)` |
